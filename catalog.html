@@ -9,23 +9,18 @@
   <body>
     <!-- Меню -->
     <header class="page-header">
-	    <div class="container">
+	    <div class="container clearfix">
 		    <div class="headre-navigation">
-			    <ul>
-				    <li><a href="#">Информация</a></li> <!-- убрала лишний класс, .headre-navigation a:hover{} и тд-->
-		            <li><a href="#">Новости</a></li>
-		            <li><a href="#">Прайс-лист</a></li>
-		            <li><a href="#" class="headre-navigation-active">Магазин</a></li><!-- на своей странице не является ссылкой-->
-		            <li><a href="#">Контакты</a></li>  
-				</ul>
+			    <a href="#"><img src="img/Logo.png" width="111px" height="24px"></a>
+				    <a href="#">Информация</a> <!-- убрала лишний класс, .headre-navigation a:hover{} и тд-->
+		            <a href="#">Новости</a>
+		            <a href="#">Прайс-лист</a>
+		            <a href="#" class="headre-navigation-active">Магазин</a></li><!-- на своей странице не является ссылкой-->
+		            <a href="#">Контакты</a> 
 			</div>
 			
 			<div class="logon">
 			    <a href="#">Вход</a>
-			</div>
-			
-			<div class="logo">
-			    <a href="#"><img src="img/Logo.png" width="111px" height="24px"></a>
 			</div>
         </div>  	
 	</header>
@@ -35,11 +30,9 @@
 		    <div class="breadcrumbs">
 			    <h1 class="breadcrumbs-title">Средства для ухода</h1>
 				<div class="breadcrumbs-item">
-				    <ul>
-		                <li><a href="#">Главная</a></li>
-		                <li><a href="#">Магазин</a></li>
-                        <li><span class="breadcrumbs-item-active">Средства для ухода</span></li><!--последняя не является ссылкой -->
-                    </ul>
+		                <a href="#">Главная</a>
+		                <a href="#">Магазин</a>
+                        <span class="breadcrumbs-item-active">Средства для ухода</span></li><!--последняя не является ссылкой -->
 				</div>
 		    </div>
 		<div class="main-content">	
@@ -47,52 +40,47 @@
 			<div class="filters">
 			    <!--производители-->
 			    <div class="filters-manufacturer">
-				    <h2 class="manufacturer-title">Производители</h2>
-        
-		            <form action="#" method="post">
+		            <form action="#" method="get">
+					<h2 class="manufacturer-title">Производители</h2>
 	                    <label>
-	                        <input type="checkbox" class="filters-manufacturer-item">BAXTER OF CALIFORNIA
-	                    </label> 
+	                        <input type="checkbox" class="filters-manufacturer-item">BAXTER OF CALIFORNIA<!--возможно <label for><input> -->
+	                    </label> <br><!-- ??? -->
 	                
 					    <label>
 	                        <input type="checkbox" name="MR NATTY" class="filters-manufacturer-item">MR NATTY
-                        </label> 
+                        </label> <br>
 	   
 	                    <label>
 	                        <input type="checkbox" name="SUAVECITO" class="filters-manufacturer-item">SUAVECITO
-	                    </label>
+	                    </label> <br>
 	  
 	                    <label>
      	                    <input type="checkbox" name="MALIN+GOETZ" class="filters-manufacturer-item">MALIN+GOETZ
-	                    </label>
+	                    </label> <br>
 	  
 	                    <label>
      	                    <input type="checkbox" name="MURRAYS" class="filters-manufacturer-item">MURRAYS
-	                    </label>
+	                    </label> <br>
 	  
 	                    <label>
     	                    <input type="checkbox" name="AMERICAN CREW" class="filters-manufacturer-item">AMERICAN CREW
-                        </label>
-					</form>
+                        </label> <br>
 				</div>	
 				<!--группы товаров-->
 				<div class="filters-product">
 				    <h2 class="product-title">Группы товаров</h2>
-					<form action="#" method="post">
 	                    <label> 
-	                        <input type="radio" name="product-item" value="barber"> Бритвенные принадлежности
-	                    </label>
+	                        <input type="radio" name="product-item" value="barber"> Бритвенные <span>принадлежности</span>
+	                    </label><br>
 	   
 	                    <label> 
 	                        <input type="radio" name="product-item" value="care" > Средства для ухода
-	                    </label>
+	                    </label><br>
 	   
 	                    <label> 
 	                        <input type="radio" name="product-item" value="accessories"> Аксессуары
-	                    </label>
-	                </form>
+	                    </label><br>
 					<!--кнопка показать-->
-					<form action="#" method="post">
 					    <label>
 						    <input class="button show-button" type="submit" value="Показать">
 						</label>
@@ -121,7 +109,7 @@
 	                <article>
 	                    <a href="#"><img src="img/Layer 30.JPG" width="220px" height="165px"></a>
 		                    <div class="product-description">
-		                        <p><a href="#">Увлажняющий кондиционер<br>
+		                        <p><a href="#">Увлажняющий кондиционер<br><!-- h2-->
 			                                   "BAXTER OF CALIFORNIA"</a>
 			                    </p>   
 			   
@@ -144,7 +132,7 @@
 			                    <form action="#" method="post">
 							        <label>
                                          <span class="baground-price">290</span>
-								        <input class="button buy-button" type="submit" value="Купить" >
+								        <input class="button buy-button" type="submit" value="Купить" ><!--переделать на ссылки -->
 							        </label>
 							    </form>	
 			                </div>  
@@ -201,11 +189,9 @@
 	            </div> 
 				<!--страницы-->
 				<div class="catalog-product-page">
-				     <ul>
-		                <li><a href="#" class="button page-button">1</a></li>
-		                <li><a href="#" class="button page-button">2</a></li>
-		                <li><a href="#" class="buttonn page-button">3</a></li>
-                    </ul>	
+		                <a href="#" class="button page-button">1</a>
+		                <a href="#" class="button page-button">2</a>
+		                <a href="#" class="buttonn page-button">3</a>	
 				</div>
 		    </div>
 		</div>	

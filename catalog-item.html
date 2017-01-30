@@ -9,38 +9,34 @@
   <body>
     <!-- Меню -->
     <header class="page-header">
-	    <div class="container">
-		    <div class="headre-navigation">
-			    <ul>
-				    <li><a href="#">Информация</a></li> <!-- убрала лишний класс, .headre-navigation a:hover{} и тд-->
-		            <li><a href="#">Новости</a></li>
-		            <li><a href="#">Прайс-лист</a></li>
-		            <li><a href="#" class="headre-navigation-active">Магазин</a></li><!-- на своей странице не является ссылкой-->
-		            <li><a href="#">Контакты</a></li>  
-				</ul>
-			</div>
+	    <div class="container clearfix">
+		    <nav class="headre-navigation">
+			    <a href="#"><img src="img/Logo.png" class="logo" width="111px" height="24px"></a>
+			    
+				    <a href="#">Информация</a> <!-- убрала лишний класс, .headre-navigation a:hover{} и тд-->
+		            <a href="#">Новости</a>
+		            <a href="#">Прайс-лист</a>
+		            <a href="#" class="headre-navigation-active">Магазин</a><!-- на своей странице не является ссылкой-->
+		            <a href="#">Контакты</a>
+				
+			</nav>
 			
 			<div class="logon">
 			    <a href="#">Вход</a>
 			</div>
 			
-			<div class="logo">
-			    <a href="#"><img src="img/Logo.png" width="111px" height="24px"></a>
-			</div>
         </div>  	
 	</header>
 	<!-- контент-->
     <main class="page-main">
 	    <div class="container">
 		    <div class="breadcrumbs">
-			    <h1 class="breadcrumbs-title">Средства для ухода</h1>
 				<div class="breadcrumbs-item">
-				    <ul>
-		                <li><a href="#">Главная</a></li>
-		                <li><a href="#">Магазин</a></li>
-						<li><a href="#">Средства для ухода</a></li>
-                        <li><span class="breadcrumbs-item-active">Набор для путешествий "BAXTER OF CALIFORNIA"</span></li><!--последняя не является ссылкой -->
-                    </ul>
+				<h1 class="breadcrumbs-title">Набор для путешествий "BAXTER OF CALIFORNIA"</h1>
+		                <a href="#">Главная</a>
+		                <a href="#">Магазин</a>
+						<a href="#">Средства для ухода</a>
+                        <a><span class="breadcrumbs-item-active">Набор для путешествий "BAXTER OF CALIFORNIA"</span></a><!--последняя не является ссылкой -->
 				</div>
 		    </div>
 		<!--блок обьединяющий изображения и описания к товару-->	
@@ -51,15 +47,15 @@
 				    <img src="img/Layer 47 copy.png" alt="Набор для путешествий BAXTER OF CALIFORNIA" width="460px" height="498px">
 				</article>
 				
-				<article class="wrapper">
+				<article class="wrapper-left">
 				    <img src="img/Layer 45.png" alt="Набор для путешествий BAXTER OF CALIFORNIA" width="140px" height="149px">
 				</article>
 				
-				<article class="wrapper">
+				<article class="wrapper-left">
 				    <img src="img/Layer 46.png" alt="Набор для путешествий BAXTER OF CALIFORNIA" width="140px" height="149px">
 				</article>
 				
-				<article class="wrapper">
+				<article class="wrapper-left-end">
 				    <img src="img/Layer 47.png" alt="Набор для путешествий BAXTER OF CALIFORNIA" width="140px" height="149px">
 				</article>
 			</div>
@@ -77,7 +73,7 @@
 				
 				<form action="#" method="post">
 				    <label>
-                        <span class="baground-price">2900</span>
+                        <span class="baground-price">2900</span><!-- изменить на ссылку-->
 					    <input class="button buy-button" type="submit" value="Купить" >
 				    </label>
 	            </form>	
@@ -98,13 +94,13 @@
 	
 	<footer class="page-footer">
 	    <div class="container">
-            <div class="footer-contacts">
+            <div class="footer-contacts ">
                 Барбершоп «Бородинский»<br>
                 Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
                 <a href="#">Как нас найти?</a><br>
                 Телефон: +7 (812) 666-02-66
             </div>		
-			<div class="footer-social">
+			<div class="footer-social r">
                 <p>Давайте дружить!</p>
                 <a  href="#" class="social-icon social-icon-vk">Вконтакте</a>
                 <a  href="#" class="social-icon social-icon-fb">Фейсбук</a>

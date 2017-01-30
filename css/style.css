@@ -17,3 +17,148 @@ h2{
 	font-size:24px;
 	line-height:30px;
 }
+/* header */
+.page-header{
+	background-color:#232323;
+}
+.container{/*общее*/
+	width:978px;
+	margin:0px auto;
+	
+}
+.clearfix::after{/*общее*/
+	content:"";
+	display:table;
+	clear:both;
+}
+
+.headre-navigation {
+    float: left;
+    width: 780px;
+	padding-top:15px;
+	padding-left:20px;
+	min-height:70px;
+	box-sizing:border-box;
+}
+.headre-navigation a{
+	
+	margin-left:40px;
+	color:white;
+	text-decoration:none;
+}
+
+.logon{
+	padding-top:20px;
+	float:right;
+	width:140px;
+	min-height:70px;
+    box-sizing:border-box;
+}
+.logon a{
+	color:white;
+	text-decoration:none;
+}
+	
+/* content catalog-item*/
+.page-main{
+	background-color:f8f5f2;
+	margin-top:0;
+	padding-top: 1em; 
+}
+
+.breadcrumbs-item{/*общее*/
+	min-height:85px;
+	margin-bottom:30px;
+	box-sizing:border-box;
+}
+.breadcrumbs-item a{/*общее*/
+	padding-right:30px;
+	color:black;
+	text-decoration:none;
+}
+
+.page-product-img {
+	float:left;
+	height:679px;
+	width:480px;
+}
+.wrapper-left{
+	float:left;
+	padding-right:20px;
+}
+.wrapper-left-end{
+	padding-right:0px;
+}
+
+.features-product{
+	float:right;
+	width:400px;
+	height:530px;
+	margin-right:40px;
+}
+/*content catalog*/
+.filters{
+	float:left;
+	width:200px;
+	height:600px;
+	margin-top:1px;
+}
+
+.filters-product span{
+	padding-left:22px;
+}
+.catalog-product{
+	float:right;
+	width:730px;
+}
+.catalog-product-img{
+	display:inline-block;
+}
+.catalog-product-img article{
+	float:left;
+	padding-left:10px;
+	padding-bottom:20px;
+}
+.button page-button{
+	float:left;
+	
+}
+.catalog-product-page{
+	padding-left:10px;
+	padding-top:20px;
+	padding-bottom:50px;
+}
+/*footer */
+.page-footer{
+	min-height:190px;
+	background-color:#232323;
+	clear:both;
+	color:white;
+}
+.page-footer a{
+	color:white;
+}
+.footer-contacts{
+	float:left;
+	width:320px;
+	padding-top:60px;
+	padding-left:10px;
+	padding-right:90px;
+}
+
+.footer-social{
+	float:left;
+	padding-top:60px;
+	padding-right:260px;
+	text-decoration:none;
+}
+.footer-social a{
+	text-decoration:none;
+}
+.footer-copyright{
+   padding-top:60px;
+}
+.footer-copyright a{
+	text-decoration:none;
+}
+
